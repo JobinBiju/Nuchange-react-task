@@ -15,10 +15,11 @@ function ProductCard({ title, vendor, price, availability }) {
       <div className="product-content">
         <h4>{title}</h4>
         <h5>{vendor}</h5>
-        <h3>${price}</h3>
+
         <h5 className={availability ? 'in-stock' : 'out-of-stock'}>
           {availability ? 'In-stock' : 'Out-of-stock'}
         </h5>
+        <h3>${price}</h3>
       </div>
     </div>
   );
