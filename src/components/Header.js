@@ -1,11 +1,15 @@
 import React from 'react';
-import '../index.css'
+import '../index.css';
+import Categories from './Categories';
 
 const Header = (props) => {
   return (
-    <header className='header'>
-      <h1>{props.title}</h1>
-    </header>
+    <div>
+      <header className="header">
+        <h1>{props.title}</h1>
+      </header>
+      <Categories />
+    </div>
   );
 };
 

@@ -18,12 +18,22 @@ h4 {
 h5 {
   font-weight: 300;
 }
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  padding-right: 12px;
+}
+a {
+  text-decoration: none;
+}
 
 .header {
   display: flex;
   position: fixed;
   width: 100vw;
-  height: 10vh;
+  height: 14vh;
   padding-top: 7px;
   margin-bottom: 8vh;
   justify-content: center;
@@ -32,9 +42,19 @@ h5 {
   box-shadow: 0 1px 15px #dddddd;
 }
 
+.categories {
+  display: flex;
+  height: 12px;
+  position: absolute;
+  width: 100vw;
+  margin-top: 58px;
+  justify-content: center;
+  align-items: center;
+}
+
 .product-list {
   margin: 0 auto;
-  padding-top: 90px;
+  padding-top: 100px;
   align-items: center;
   justify-content: center;
   display: grid;
