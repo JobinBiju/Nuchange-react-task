@@ -33,17 +33,15 @@ h5 {
 }
 
 .product-list {
-  background-color: aqua;
   margin: 0 auto;
   padding-top: 90px;
   align-items: center;
   justify-content: center;
   display: grid;
   width: 90vw;
-  max-width: 1200px;
-  gap: 1rem 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-end: unset;
+  max-width: 1240px;
+  gap: 2rem 1rem;
+  grid-template-columns: repeat(2, 31.5vh);
 }
 
 .product-card {
@@ -72,4 +70,11 @@ h5 {
 
 .out-of-stock {
   color: red;
+}
+
+@media screen and (min-width: 768px) {
+  .product-list {
+    gap: 2rem 4rem;
+    grid-template-columns: repeat(4, 30vh);
+  }
 }
